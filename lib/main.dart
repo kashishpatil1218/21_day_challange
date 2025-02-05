@@ -1,3 +1,4 @@
+import 'package:daychallange/day_3/custom_paint_day_3.dart';
 import 'package:flutter/material.dart';
 
 import 'day_2/Animated_cross_fade.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: MyPage(),
+      home: HomePage(),
     );
   }
 }
