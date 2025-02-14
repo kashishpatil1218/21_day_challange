@@ -44,16 +44,16 @@ class MyShape extends CustomPainter {
       size.height * 0.85,
     );
     path.quadraticBezierTo(
-      size.width * 0.20,
+      size.width * 1,
       size.height * 0.75,
       size.width * 0.85,
       size.height * 7,
     );
 
     path.quadraticBezierTo(
-      size.width * 0.95,
+      size.width * 95,
       size.height * 0.65,
-      size.width * 1,
+      size.width * 0.1,
       size.height * 0.68,
     );
     path.lineTo(size.width, size.height);
@@ -62,7 +62,7 @@ class MyShape extends CustomPainter {
     canvas.drawPath(path, paint);
     final paint1 = Paint();
     paint1.style=PaintingStyle.fill;
-    paint1.color=Colors.lightBlueAccent;
+    paint1.color=Colors.blueAccent;
     canvas.drawPath(path,paint1);
   }
 

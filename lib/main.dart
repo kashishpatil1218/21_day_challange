@@ -1,22 +1,23 @@
-import 'package:daychallange/day_3/custom_paint_day_3.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'day_10/calculator.dart';
+import 'day_10/provider/cal_provider.dart'; // Import your provider
 import 'package:flutter/material.dart';
 
-import 'day_2/Animated_cross_fade.dart';
+void main() => runApp(MyApp());
 
-void main() {
-  runApp(const MyApp());
-}
+
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomePage(),
+    return ChangeNotifierProvider(
+      create: (context) =>CalculatorProvider(),
+      child: MaterialApp(
+        home: CalculatorScreen(),
+      ),
     );
   }
 }
-
