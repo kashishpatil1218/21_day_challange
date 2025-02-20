@@ -1,5 +1,5 @@
 
-# Radial Slider for Flutter
+# Radial Slider 
 
 A beautiful, customizable radial slider widget for Flutter. This widget allows users to slide around a circular arc, providing an intuitive and visually appealing way to select a value. Ideal for scenarios where a radial UI element is needed, such as adjusting volume, brightness, or any other parameter that benefits from a circular control.
 
