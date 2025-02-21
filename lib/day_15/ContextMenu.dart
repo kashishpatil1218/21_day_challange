@@ -15,10 +15,6 @@ class ContextMenu extends StatelessWidget {
           width: 100,
           height: 100,
           child: CupertinoContextMenu(
-            child: Image.asset(
-              'asset/img/images.png',
-              height: 500,
-            ),
             actions: <Widget>[
               CupertinoContextMenuAction(
                 child: Text('Action one'),
@@ -33,6 +29,10 @@ class ContextMenu extends StatelessWidget {
                 },
               ),
             ],
+            child: Image.asset(
+              'asset/img/images.png',
+              height: 500,
+            ),
           ),
         ),
       ),
