@@ -7,6 +7,8 @@ import 'day_10/calculator.dart';
 import 'day_10/provider/cal_provider.dart'; // Import your provider
 import 'package:flutter/material.dart';
 
+import 'day_15/ContextMenu.dart';
+
 void main() => runApp(MyApp());
 
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       create: (context) =>CalculatorProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeScreen(),
+        home: ContextMenu(),
       ),
     );
   }
